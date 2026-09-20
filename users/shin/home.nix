@@ -10,6 +10,7 @@
         ./themes.nix
         ./mpv.nix
         ./mango.nix
+        ./hypr.nix
         ./shell.nix
         ./programs.nix
         ./services.nix

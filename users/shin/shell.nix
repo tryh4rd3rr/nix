@@ -28,7 +28,7 @@
             rebuild = "doas nixos-rebuild switch --flake ~/nix-config#deathstar";
             sudo = "doas";
         };
-        interactiveShellInit = ''
+        shellInit = ''
             set -gx PATH /run/wrappers/bin $PATH
         '';
     };

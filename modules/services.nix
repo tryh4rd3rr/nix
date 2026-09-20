@@ -68,11 +68,16 @@
     };
 
     services.ollama = {
-        enable = true;
+        enable = false;
         package = pkgs.ollama-rocm;
         environmentVariables = {
             HCC_AMDGPU_TARGET = "gfx1031";
         };
         rocmOverrideGfx = "10.3.0";
+    };
+
+    services.avahi = {
+        enable = true;
+        nssmdns4 = true;
     };
 }

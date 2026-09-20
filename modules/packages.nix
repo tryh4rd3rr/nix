@@ -119,5 +119,6 @@ in
         man-pages
         reaper
         vital
+        anki
     ];
 }
